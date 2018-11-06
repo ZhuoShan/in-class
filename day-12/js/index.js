@@ -18,7 +18,7 @@ class Puppy {
         let puppyCard = $('<div>');
         puppyCard.attr('title', `puppy that says ${this.sound}`);
         puppyCard.attr('class', 'puppyCard col-sm-4');
-        puppyCard.attr('background-img', `url(${this.img})`);
+        puppyCard.css('background-img', `url(${this.img})`);
         puppyCard.click(() => this.bark());
     }
 }
